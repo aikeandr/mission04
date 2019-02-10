@@ -3,6 +3,8 @@ package edu.isu.cs.cs3308.structures.impl;
 import edu.isu.cs.cs3308.structures.Deque;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+
+import edu.isu.cs.cs3308.structures.LinkedDeque;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

@@ -2,9 +2,9 @@ package edu.isu.cs.cs3308;
 
 import edu.isu.cs.cs3308.structures.Deque;
 import edu.isu.cs.cs3308.structures.Stack;
-import edu.isu.cs.cs3308.structures.impl.LinkedDeque;
-import edu.isu.cs.cs3308.structures.impl.LinkedStack;
-import edu.isu.cs.cs3308.structures.impl.RedBlueDoubleStackImpl;
+import edu.isu.cs.cs3308.structures.LinkedDeque;
+import edu.isu.cs.cs3308.structures.LinkedStack;
+import edu.isu.cs.cs3308.structures.RedBlueDoubleStackImpl;
 import edu.isu.cs.cs3308.structures.RedBlueDoubleStack;
 
 /**
@@ -35,10 +35,11 @@ public class Driver {
 
         System.out.println("\n");
         System.out.println("Reversed:");
+        deque.reverse();
         deque.printQueue();
 
         System.out.println("\n");
-        System.out.println("Transfered:");
+        System.out.println("Transferred:");
         Deque<String> temp = new LinkedDeque<>();
         deque.transfer(temp);
         temp.printQueue();
@@ -46,6 +47,7 @@ public class Driver {
         System.out.println("\n");
         System.out.println("Merged Back:");
         deque.merge(temp);
+        deque.printQueue();
 
         System.out.println("\n");
         Stack<Integer> stack1 = new LinkedStack<>();

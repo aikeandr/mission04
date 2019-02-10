@@ -9,10 +9,10 @@
 * Implement a new data structure using a deque
 
 ## Problem Statement
-Given the Deque ADT, implement a Deque using your DoublyLinkedList. Then use the Deque and other ADTs to solve the follwoign problems:
+Given the Deque ADT, implement a Deque using your DoublyLinkedList. Then use the Deque and other ADTs to solve the following problems:
 
-1. Suppose you have two nonempty stacks S and T and a deque D. Describe how to use D so that S stores all teh elements of T below all of its origanl elements with both sets of elements still in their original order.
-2. Using a Deque to design a two-color DoubleStack ADT which repreents two stacks -- one "red" and one "blue" -- and which has two versions of the basic stack operations.
+1. Suppose you have two nonempty stacks S and T and a deque D. Describe how to use D so that S stores all teh elements of T below all of its original elements with both sets of elements still in their original order.
+2. Using a Deque to design a two-color DoubleStack ADT which represents two stacks -- one "red" and one "blue" -- and which has two versions of the basic stack operations.
 
 ## Assignment
 1. Fork this repository

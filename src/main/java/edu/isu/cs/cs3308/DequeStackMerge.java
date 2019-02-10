@@ -2,11 +2,12 @@ package edu.isu.cs.cs3308;
 
 import edu.isu.cs.cs3308.structures.Deque;
 import edu.isu.cs.cs3308.structures.Stack;
-import edu.isu.cs.cs3308.structures.impl.LinkedDeque;
+import edu.isu.cs.cs3308.structures.LinkedDeque;
 
 /**
  *
  * @author Isaac Griffith
+ * @author Andrew Aikens
  */
 public class DequeStackMerge {
 
@@ -20,6 +21,14 @@ public class DequeStackMerge {
      * @param from Stack which is merged into the bottom of the other stack.
      */
     public static <E> void dequeStackMerge(final Stack<E> into, Stack<E> from) {
-        throw new UnsupportedOperationException("Not Yet Implemented");
+        if(into == null || from == null)
+            return;
+        Deque<E> deque = new LinkedDeque<>();
+        while(!into.isEmpty())
+            deque.offer(into.pop());
+        while(!from.isEmpty())
+            deque.offer(from.pop());
+        while(!deque.isEmpty())
+            into.push(deque.pollLast());
     }
 }

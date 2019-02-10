@@ -1,5 +1,6 @@
 package edu.isu.cs.cs3308.structures.impl;
 
+import edu.isu.cs.cs3308.structures.RedBlueDoubleStackImpl;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
